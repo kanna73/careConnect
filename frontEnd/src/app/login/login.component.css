@@ -1,0 +1,174 @@
+/* tr,td{
+    /* border: 1px solid black; */
+    /* text-align: center;
+    padding:10px;
+}
+
+table{
+    width:800px;
+    margin: auto;
+}
+
+label,input,select{
+    font-size: 20px;
+}
+
+button{
+    font-size: 20px;
+}
+body{
+    background-color: #323232;
+}
+
+.container {
+    background-image: url('../../assets/images/back.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+ */
+/* 
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: #323232;
+  } */
+/*   
+  .container {
+    width: 100%;
+    height: 70%;
+    background-image: url('../../assets/images/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .box{
+    height: 100%;
+  }
+  
+  .container table {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container label,
+  .container input,
+  .container select {
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  .container button {
+    font-size: 20px;
+  } */
+  
+
+
+
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  td {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+  
+  label {
+    /* display: block;
+    text-align: right; */
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .buttons button {
+    flex-grow: 1;
+    margin-right: 5px;
+  }
+  
+  .buttons button:last-child {
+    margin-right: 0;
+  }
+  
+  .buttons button:first-child {
+    margin-left: 5px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .buttons button {
+    flex: 0 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .buttons button:first-child {
+    margin-right: 5px;
+  }
+  
+  .middle-buttons {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+  }
+
+  #cancel{
+    position: relative;
+    left:220px;
+    bottom:57px;
+  }
+  .middle{
+    position: relative;
+    left:100px;
+    bottom:57px;
+
+  }
+  
+  
+
+
+ 

@@ -1,0 +1,193 @@
+<button type="button" (click)="sendRequest()">view request</button>
+
+<div class="card-container">
+  <div class="card" *ngFor="let b of staff">
+      <img class="card-img-top" src="./../../assets/Doctor/{{b.name}}.jpg" alt="User Image">
+      <div class="card-body">
+          <h5 class="card-title">{{ b.name }}</h5>
+          <p class="card-text">
+              <strong>Email:</strong> {{ b.email }}<br>
+              <strong>User Name:</strong> {{ b.userName }}<br>
+              <strong>Gender:</strong> {{ b.gender }}<br>
+              <strong>Role:</strong> {{ b.role }}<br>
+              <strong>Specialization:</strong> {{ b.specialization }}<br>
+              <strong>Experience:</strong> {{ b.experiance }}<br>
+              <strong>Password:</strong> {{ b.password }}
+          </p>
+          <button class="btn btn-primary" (click)="addRow(b)">Add</button>
+          <button class="btn btn-danger" (click)="deleteRow(b)">Delete</button>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+ <!-- <div class="card-container">
+    <div class="card" *ngFor="let b of staff">
+        <img class="card-img-top" src="path/to/image.jpg" alt="User Image">
+        <div class="card-body">
+            <h5 class="card-title">{{ b.name }}</h5>
+            <p class="card-text">
+                <strong>Email:</strong> {{ b.email }}<br>
+                <strong>User Name:</strong> {{ b.userName }}<br>
+                <strong>Gender:</strong> {{ b.gender }}<br>
+                <strong>Role:</strong> {{ b.role }}<br>
+                <strong>Specialization:</strong> {{ b.specialization }}<br>
+                <strong>Experience:</strong> {{ b.experience }}<br>
+                <strong>Password:</strong> {{ b.password }}
+            </p>
+            <button class="btn btn-primary" (click)="addRow(b)">Add</button>
+            <button class="btn btn-danger" (click)="deleteRow(b)">Delete</button>
+        </div>
+    </div>
+</div> --> 
+
+<!-- <nav>
+    <div class="logo">Hospital</div>
+    <ul class="nav-links">
+        <li><a (click)="home()">Home</a></li>
+
+      <li><a (click)="resquest()">Resquest</a></li>
+
+      <li>
+        <a *ngIf="role !== ''" (click)="logOutPage()">Logout</a>
+      </li>
+    </ul>
+  </nav>
+    
+    <section class="slider">
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="../../assets/images/team-young-specialist-doctors-standing-corridor-hospital.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="../../assets/images/old-woman-with-sickness-getting-consultation-from-nurse-doctor.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="../../assets/images/senior-woman-with-walking-frame-hospital-waiting-room-rehabilitation-treatment.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="../../assets/images/senior-woman-with-walking-frame-hospital-waiting-room-rehabilitation-treatment.jpg" alt="Image 4">
+        </div>
+      </div>
+    </section>
+    
+    <section class="cards">
+      <div class="row">
+        <div class="card">
+          <img src="../../assets/images/athlete-playing-sport-with-hand-drawn-doodles.png" alt="Image 1">
+          <div class="card-content">
+            <h3>Healthy Living</h3>
+            <p>Discover tips and tricks for maintaining a healthy lifestyle.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../../assets/images/close-up-doctor-with-stethoscope (1).jpg" alt="Image 2">
+          <div class="card-content">
+            <h3>Preventive Care</h3>
+            <p>Learn about preventive measures to safeguard your health.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../../assets/images/close-up-face-young-woman-relaxing-gentle (1).jpg" alt="Image 3">
+          <div class="card-content">
+            <h3>Specialized Treatments</h3>
+            <p>Explore our range of specialized treatments for various conditions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card">
+          <img src="../../assets/images/mental-health-care-sketch-diagram.jpg" alt="Image 4">
+          <div class="card-content">
+            <h3>Mental Health</h3>
+            <p>Find support and resources for maintaining good mental health.</p>
+          </div>
+        </div>
+
+        <div class="card">
+            <img src="../../assets/images/slim-beautiful-woman-silhouette-doing-sports-morning-park-doing-yoga.jpg" alt="Image 4">
+            <div class="card-content">
+              <h3>Mental Health</h3>
+              <p>Find support and resources for maintaining good mental health.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../../assets/images/buddha-bowl-dish-with-vegetables-legumes-top-view (1).jpg" alt="Image 4">
+            <div class="card-content">
+              <h3>Mental Health</h3>
+              <p>Find support and resources for maintaining good mental health.</p>
+            </div>
+          </div>
+        
+        <!-- Add more cards as needed -->
+      <!-- </div>
+    </section>
+    
+    <footer>
+        <div class="footer-left">
+          <h3>Contact Us</h3>
+          <p>123 Hospital Street, City, Country</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="footer-right">
+          <h3>Follow Us</h3>
+          <ul class="social-media-links">
+            <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+      </footer> -->
+
+      <!-- <nav>
+        <div class="logo">Hospital</div>
+        <ul class="nav-links">
+            <!-- <li><a (click)="home()">Home</a></li>
+    
+          <li><a>Doctor</a></li> -->
+    
+          <!-- <li>
+            <a *ngIf="role !== ''" (click)="logOutPage()">Logout</a>
+          </li>
+        </ul>
+      </nav> --> 
+   
+      <!-- <table class="table">
+      <thead>
+          <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email Id</th>
+              <th scope="col">User Name</th>
+              <th scope="col">gender</th>
+              <th scope="col">role</th>
+              <th scope="col">specialization</th>
+              <th scope="col">experiance</th>
+              <th scope="col">password</th>
+  
+  
+              <th scope="col">Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let b of staff">
+              <td>{{b.name}}</td>
+              <td>{{b.email}}</td>
+              <td>{{b.userName}}</td>
+              <td>{{b.gender}}</td>
+              <td>{{b.role}}</td>
+              <td>{{b.specialization}}</td>
+              <td>{{b.experiance}}</td>
+              <td>{{b.password}}</td>
+  
+  
+              <td>
+                  <button (click)="addRow(b)">Add</button>
+                  <button (click)="deleteRow(b)">Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table> -->
